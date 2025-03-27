@@ -81,7 +81,7 @@ The project includes several key components:
 - And many more reusable components
 
 ## 📄 License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU AFFERO GENERAL PUBLIC LICENSE** - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute, feel free to submit issues and pull requests.
