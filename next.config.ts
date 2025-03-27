@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    domains: ["assets.aceternity.com"], // Add the hostname here
+  },
   
 };
 

@@ -181,7 +181,7 @@
     @apply w-fit !bg-dark-200 !text-primary-200 hover:!bg-dark-200/80 !rounded-full !font-bold px-5 cursor-pointer min-h-10;
   }
 
-  .btn-upload {
+  .btn-upload{
     @apply bg-dark-200 rounded-full min-h-12 px-5 cursor-pointer border border-input  overflow-hidden;
   }
 
@@ -262,11 +262,12 @@
   }
 
   .root-layout {
-    @apply flex mx-auto max-w-7xl flex-col gap-12 my-12 px-16 max-sm:px-4 max-sm:my-8;
+    /* @apply flex mx-auto max-w-7xl flex-col gap-12 my-12 px-18 max-sm:px-4 max-sm:my-8; */
+    @apply flex flex-col gap-12 my-12 max-sm:my-8;
   }
 
   .card-cta {
-    @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-6 items-center justify-between max-sm:px-4;
+    @apply flex flex-row blue-gradient-dark rounded-3xl mx-10 px-16 py-6 items-center justify-between max-sm:px-4;
   }
 
   .interviews-section {
@@ -307,7 +308,7 @@
 }
 
 @utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
+  @apply bg-gradient-to-b from-[#171532] to-[#08090D]; 
 }
 
 @utility blue-gradient {

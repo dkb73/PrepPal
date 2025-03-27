@@ -122,3 +122,23 @@ export async function isAuthenticated(){
     return !!user;
 }
 
+export async function logout() {
+    const cookieStore = await cookies();
+    
+    try {
+        // Clear the session cookie
+        cookieStore.delete('session');
+        
+        return {
+            success: true,
+            message: 'Logged out successfully'
+        };
+    } catch (error) {
+        console.error('Error during logout:', error);
+        return {
+            success: false,
+            message: 'Failed to logout'
+        };
+    }
+}
+
