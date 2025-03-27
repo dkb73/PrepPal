@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -20,8 +21,8 @@ export default function Page() {
       {/* Header Section */}
       <header className="container mx-auto px-6 py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
-          <div className="text-center lg:text-left max-w-2xl">
-            <h1 className="text-5xl font-extrabold mb-4 text-white leading-tight">
+          <div className="text-center lg:text-left max-w-2xl mx-10">
+            <h1 className="text-6xl font-extrabold mb-4 text-white leading-tight">
               Ace Your Next Interview
             </h1>
             <p className="text-xl text-gray-400 mb-6">
@@ -29,9 +30,15 @@ export default function Page() {
             </p>
             
           </div>
-          <div className="w-full max-w-md">
-            <div className="bg-gray-900 rounded-xl shadow-2xl border-4 border-gray-800 transform hover:scale-105 transition-transform duration-300 aspect-video flex items-center justify-center">
-              <p className="text-gray-500">Dashboard Preview</p>
+          <div className="w-full max-w-lg">
+            <div className="bg-black rounded-xl shadow-2xl border-4 border-gray-800 transform hover:scale-105 transition-transform duration-300 aspect-video flex items-center justify-center">
+              <Image
+                src="/feedbackImg1.png"
+                alt="Interview Dashboard Preview"
+                fill
+                sizes="100%"
+                className="w-full h-full object-contain rounded-lg"
+              />
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { motion, MotionValue } from "motion/react";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+import { Cover } from "@/components/ui/cover";
 const transition = {
   duration: 0,
   ease: "linear",
@@ -23,9 +23,9 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("relative min-h-screen", className)}>
-      <p className="text-lg md:text-7xl font-bold pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-        {title || `Prepare like never before`}
-      </p>
+      <div className="text-lg md:text-7xl font-bold pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+        {title || `Prepare like `}<Cover>never</Cover> before
+      </div>
       <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
         {description ||
           `Get Interview-Ready with AI-Powered Practice & Feedback`}

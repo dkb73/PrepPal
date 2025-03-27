@@ -48,14 +48,14 @@ const Page = async ({params}: RouteParams) => {
   })) || [];
 
   return (
-    <div className="min-h-screen bg-white p-6">
+    <div className="min-h-screen bg-gray-800 p-6 mx-15 rounded-4xl">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Interview Feedback - <span className="capitalize text-gray-600">{interview.role}</span>
+          <h1 className="text-3xl font-bold text-gray-200 mb-2">
+            Interview Feedback - <span className="capitalize text-gray-200">{interview.role}</span>
           </h1>
-          <div className="flex items-center justify-center gap-4 text-gray-600">
+          <div className="flex items-center justify-center gap-4 text-gray-200">
             <div className="flex items-center">
               <Image src="/calendar.svg" width={18} height={18} alt="calendar" className="mr-1" />
               <span>

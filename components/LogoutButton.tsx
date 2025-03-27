@@ -32,7 +32,7 @@ const LogoutButton = () => {
 
   return (
     <Button 
-      className="btn-primary max-sm:w-full"
+      className="btn-primary max-sm:w-full "
       onClick={handleLogout}
     >
       Log Out

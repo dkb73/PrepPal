@@ -152,7 +152,7 @@ const Agent = ({ userName,userId,type,interviewId,questions }: AgentProps) => {
           </div>
           <h3>AI Interviewer</h3>
         </div>
-        <div className="card-border">
+        <div className="card-border mr-10">
           <div className="card-content">
             <Image
               src="/user-avatar.png"
@@ -166,7 +166,7 @@ const Agent = ({ userName,userId,type,interviewId,questions }: AgentProps) => {
         </div>
       </div>
       {messages.length>0 && (
-          <div className = "transcript-border"> 
+          <div className = "transcript-border "> 
             <div className="transcript">
               <p key={latestMessage} className={"cn('transition-opacity duration-500 opacity-0','animate-fadeIn opacity-100')"}>
                 {latestMessage}
@@ -174,13 +174,13 @@ const Agent = ({ userName,userId,type,interviewId,questions }: AgentProps) => {
             </div>
           </div>
       )}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center mt-10">
         {callStatus !== 'ACTIVE' ?(
         <button className="relative btn-call" onClick={handleCall}>
           <span className={cn('absolute animate-ping rounded-full opacity-75',callStatus !=='CONNECTING' && 'hidden')}/>
 
            <span> 
-             {isCallInactiveOrFinished ? 'Call' : '. . .'}
+             {isCallInactiveOrFinished ? 'Start' : '. . .'}
            </span>
         </button>):(
           <button className="btn-disconnect" onClick={handleDisconnect}>

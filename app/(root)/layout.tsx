@@ -19,7 +19,7 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
           <Image src="/logo.svg" alt="Logo" width={38} height={32} />
           <h2 className="text-primary-100">PrepPal</h2>
         </Link>
-        <div className="mx-10">
+        <div className="mr-20">
           <Button className="btn-primary max-sm:w-full mx-5">
             <Link href="/interview">Get Started</Link>
           </Button>

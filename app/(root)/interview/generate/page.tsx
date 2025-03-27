@@ -10,8 +10,8 @@ const GeneratePage = async () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Create New Interview</h1>
+    <div className="mx-25 px-4 py-8 ">
+      <h1 className="text-3xl font-bold mb-8">Design Your Interview</h1>
       <Agent userName={user.name || ""} userId={user.id} type="generate"/>
     </div>
   );
