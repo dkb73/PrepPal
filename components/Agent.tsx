@@ -90,7 +90,7 @@ const Agent = ({ userName,userId,type,interviewId,questions }: AgentProps) => {
     if(callStatus === CallStatus.FINISHED) 
     {
       if(type==='generate'){
-        router.push('/')
+        router.push('/interview/history')
       }else{
         handleGenerateFeedback(messages);
       }
